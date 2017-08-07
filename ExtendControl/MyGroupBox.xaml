@@ -1,0 +1,28 @@
+﻿<GroupBox x:Class="ExtendControl.MyGroupBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ExtendControl"
+            x:Name="myBox"
+             mc:Ignorable="d" Height="289.802" Width="331.445">
+    <GroupBox.Header>
+        <Grid 
+            Height="20" 
+            Margin="0"
+            Background="#FF32CDF0" 
+            Width="{Binding ElementName=myBox,Path=Width}">
+            <TextBlock 
+                Text="{Binding ElementName=myBox,Path=MyHeader}"
+                Width="200" 
+                Foreground="White"
+                HorizontalAlignment="Left"/>
+            <Button 
+                Width="30" 
+                Content="刷新" 
+                Margin="0,0,10,0" 
+                HorizontalAlignment="Right" />
+        </Grid>
+    </GroupBox.Header>
+    
+</GroupBox>
